@@ -31,5 +31,6 @@ export default {
   height:14px;
   background: #179FF4;
   text-align: left;
+  font-size: 23px;
 }
 </style>
