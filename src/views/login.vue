@@ -11,6 +11,7 @@
     <el-row>
       <el-col>
         <div>欢迎来到登录页</div>
+        <el-button @click="handelTo">Echart</el-button>   
          <el-button @click="handleRest">请求接口</el-button> 
          <div v-for="(x, i) in data" :key="i">
           <span v-if="x.show">
@@ -133,6 +134,9 @@ export default {
     }
   },
   methods: {
+    handelTo () {
+      this.$router.push({name: 'MYEchat'})
+    },
     handleStateChange () {
       this.$store.commit('increment', 'Vuex状态值发生改变了！！！')
       console.log()
